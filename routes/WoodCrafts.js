@@ -3,7 +3,7 @@ const router = express.Router();
 const woodCraftsCtrl = require('../controllers/WoodCrafts');
 
 router.get('/', woodCraftsCtrl.index);
-router.get('/request', woodCraftsCtrl.new);
+// router.get('/new', woodCraftsCtrl.new);
 
 router.post('/requested', woodCraftsCtrl.create);
 
