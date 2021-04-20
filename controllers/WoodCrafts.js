@@ -7,7 +7,7 @@ module.exports = {
 };
 
 function newCraft(req, res) {
-    res.render('/woodCrafts/new', {title: 'Add Craft'});
+    res.render('woodCrafts/new', {title: 'Add Craft'});
 }
 
 function create(req, res){
@@ -20,7 +20,7 @@ function create(req, res){
 
 function index(req, res){
     WoodCraft.find({}, function(err, woodCrafts){
-        res.render('/index', { title: 'All Crafts', woodCrafts});
+        res.render('woodCrafts/', { title: 'All Crafts', woodCrafts});
     });
 }
 

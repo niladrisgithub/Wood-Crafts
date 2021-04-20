@@ -2,7 +2,13 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const requestSchema = new Schema({
+const woodCraftSchema = new Schema({
+    
+})
+   
+   
+   
+const RequestSchema = new Schema({   
     user: {
         
     },
@@ -27,3 +33,5 @@ const requestSchema = new Schema({
 }, {timestamps: true
     
 });
+
+module.exports = mongoose.model('WoodCraft', woodCraftSchema)
