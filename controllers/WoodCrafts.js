@@ -14,7 +14,7 @@ function create(req, res){
     console.log(req.body)
    WoodCraft.create(req.body, function( err, woodCraft){
        if(err) return res.redirect('/woodCrafts/new');
-       res.redirect('/requested');
+       res.redirect('/woodCrafts');
    }); 
 }
 
