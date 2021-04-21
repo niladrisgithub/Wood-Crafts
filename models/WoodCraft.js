@@ -1,14 +1,9 @@
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
-
-const woodCraftSchema = new Schema({
-    
-})
+ 
    
-   
-   
-const RequestSchema = new Schema({   
+const woodCraftSchema = new Schema({   
     user: {
         
     },
@@ -28,7 +23,6 @@ const RequestSchema = new Schema({
         type: Number,
         min: 10,
         max: 9999,
-        required: true,
     }
 }, {timestamps: true
     

@@ -5,7 +5,7 @@ const woodCraftsCtrl = require('../controllers/WoodCrafts');
 router.get('/', woodCraftsCtrl.index);
 router.get('/new', woodCraftsCtrl.new);
 
-router.post('/requested', woodCraftsCtrl.create);
+router.post('/', woodCraftsCtrl.create);
 
 
-module.exports = router
+module.exports = router;

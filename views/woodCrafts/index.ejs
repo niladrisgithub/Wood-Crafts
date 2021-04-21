@@ -12,7 +12,6 @@
         <nav>
           <img src="">
           <a href="/woodCrafts/new" >CREATE REQUEST</a>
-          <a href="/woodCrafts/woodCrafts" >SHOP</a>
           <a href="/woodCrafts" >HOME</a>
         </nav>
         <main>
@@ -26,11 +25,29 @@
 
     <img src="/public/images/Index.JPG " alt="Holding a saw">
 
-
-    
     
     </main>
     
 
+    <table id="list">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Material</th>
+                <th>Size / Dimensions</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% woodCrafts.forEach(function(woodCraft){ %>
+                <tr>
+                    <td><%= woodCraft.itemDesired %></td>
+                    <td><%= woodCraft.material %></td>
+                    <td><%= woodCraft.size %></td>
+                    <td><%= woodCraft.cost %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
 </body>
 </html>

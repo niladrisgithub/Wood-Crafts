@@ -14,7 +14,7 @@ function create(req, res){
     console.log(req.body)
    WoodCraft.create(req.body, function( err, woodCraft){
        if(err) return res.redirect('/woodCrafts/new');
-       res.redirect('/woodCrafts');
+       res.redirect('woodCrafts/');
    }); 
 }
 
@@ -23,6 +23,5 @@ function index(req, res){
         res.render('woodCrafts/', { title: 'All Crafts', woodCrafts});
     });
 }
-
 
 
