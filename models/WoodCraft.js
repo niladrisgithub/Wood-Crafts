@@ -19,11 +19,6 @@ const woodCraftSchema = new Schema({
         type: String,
         required: true,
     },
-    cost: {
-        type: Number,
-        min: 10,
-        max: 9999,
-    }
 }, {timestamps: true
     
 });

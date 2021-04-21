@@ -4,13 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel='stylesheet' href='/stylesheets/style.css' />
         <title>HOME</title>
       </head>
       <body>
         <nav>
-          <img src="">
+          <img src="/public/images/saw-blade.jpeg">
           <a href="/woodCrafts/new" >CREATE REQUEST</a>
           <a href="/woodCrafts" >HOME</a>
         </nav>
@@ -32,10 +31,10 @@
     <table id="list">
         <thead>
             <tr>
-                <th>Project Name</th>
+                <th>Wooden Craft</th>
                 <th>Material</th>
                 <th>Size / Dimensions</th>
-                <th>Cost</th>
+                <th>Date Requested</th>
             </tr>
         </thead>
         <tbody>
@@ -44,7 +43,7 @@
                     <td><%= woodCraft.itemDesired %></td>
                     <td><%= woodCraft.material %></td>
                     <td><%= woodCraft.size %></td>
-                    <td><%= woodCraft.cost %></td>
+                    <td><%= woodCraft.createdAt.toLocaleString() %></td>
                 </tr>
             <% }); %>
         </tbody>

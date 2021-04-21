@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel='stylesheet' href='/stylesheets/style.css' />
         <title>REQUEST</title>
       </head>
@@ -15,17 +14,31 @@
             <a href="/woodCrafts" >HOME</a>
           </nav>
         <main>
-          <h1>REQUEST A CUSTOM PROJECT</h1>
+          <h1>Request a Custom Wooden Craft</h1>
 
     <form id="new-form" action="/woodCrafts" method="POST">
-    <label>Project Name</label>
+    <label>Wooden Craft</label>
     <input type="text" name="itemDesired">
     <label>Material</label>
-    <input type="text" name="material">
+      <div class="input-field col s12">
+      <select name="material">
+        <option value=" "disabled selected>Choose your option</option>
+        <option value="alder">Alder</option>
+        <option value="cedar">Cedar</option>
+        <option value="cherry">Cherry</option>
+        <option value="douglas-fir">Douglas-Fir</option>
+        <option value="maple">Maple</option>
+        <option value="oak">Oak</option>
+        <option value="pine">Pine</option>
+        <option value="poplar">Poplar</option>
+        <option value="pressure-treated lumber">Pressure Treated Boards</option>
+        <option value="red oak">Red Oak</option>
+        <option value="spruce">Spruce</option>
+        <option value="walnut">Walnut</option>
+    </select>
+  </div>
     <label>Size or Dimensions</label>
     <input type="text" name="size">
-    <label>Cost</label>
-    <input type="number" value="cost">
     <input type="submit" value="Request Project">
 </form>
 
