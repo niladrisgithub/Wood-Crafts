@@ -11,6 +11,7 @@ body {
     grid-template-rows: 50px 1fr;
     grid-template-areas: 
         "nav"
+        
 
 }
 
@@ -78,5 +79,13 @@ table td {
 }
 
 #picture {
-    max-height: 50px;
+    width: 175px;
+}
+
+#gallery{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 22rem));
+    grid-gap: 10px;
+
 }

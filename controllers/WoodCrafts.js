@@ -5,6 +5,7 @@ module.exports = {
     index,
     create,
     del,
+    gallery,
 };
 
 function newCraft(req, res) {
@@ -21,7 +22,7 @@ function create(req, res){
 
 function index(req, res){
     WoodCraft.find({}, function(err, woodCrafts){
-        res.render('woodCrafts/', { title: 'All Crafts', woodCrafts});
+        res.render('woodCrafts/', { title: 'Home', woodCrafts});
     });
 }
 
@@ -32,4 +33,8 @@ function del(req, res){
     })
 }
 
-
+function gallery(req, res){
+    WoodCraft.find({}, function(err, woodCrafts){
+        res.render('woodCrafts/gallery', {title: 'Gallery'})
+    })
+}

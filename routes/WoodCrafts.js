@@ -6,5 +6,5 @@ router.get('/', woodCraftsCtrl.index);
 router.get('/new', woodCraftsCtrl.new);
 router.post('/', woodCraftsCtrl.create);
 router.delete('/woodCrafts/:id', woodCraftsCtrl.del)
-
+router.get('/gallery', woodCraftsCtrl.gallery)
 module.exports = router;
