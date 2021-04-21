@@ -9,7 +9,7 @@
       </head>
       <body>
         <nav>
-          <img src="/public/images/saw-blade.jpeg">
+          <img src="/images/saw-blade.jpeg">
           <a href="/woodCrafts/new" >CREATE REQUEST</a>
           <a href="/woodCrafts" >HOME</a>
         </nav>
@@ -22,10 +22,10 @@
     <h1>Welcome to Niladri's Wood-Crafts</h1>
     <p>Hand crafted items to enhance your indoor outdoor spaces!</p>
 
-    <img src="/public/images/Index.JPG " alt="Holding a saw">
+    <img src="/images/Index.JPG" class="picture" alt="Holding a saw">
 
     
-    </main>
+   
     
 
     <table id="list">
@@ -40,13 +40,19 @@
         <tbody>
             <% woodCrafts.forEach(function(woodCraft){ %>
                 <tr>
+                    
                     <td><%= woodCraft.itemDesired %></td>
                     <td><%= woodCraft.material %></td>
                     <td><%= woodCraft.size %></td>
                     <td><%= woodCraft.createdAt.toLocaleString() %></td>
+                    <td><form action="/woodCrafts/<%= woodCraft._id %>?_method=DELETE" method="POST">
+                        <button type="submit">DELETE</button>
+                    </form></td>
                 </tr>
             <% }); %>
         </tbody>
     </table>
+
+</main>
 </body>
 </html>

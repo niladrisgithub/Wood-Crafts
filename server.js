@@ -4,6 +4,7 @@
  const port = 3000;
  const indexRouter = require('./routes/index');
  const woodCraftsRouter = require('./routes/WoodCrafts');
+ const methodOverride = require('method-override')
 
 // Create or initialize the express app
 const app = express();
@@ -15,6 +16,7 @@ require('./config/database');
  app.set('view engine', 'ejs');
 
 // Mount application middleware app.use()
+app.use(methodOverride('_method'));
 app.use(morgan('dev'));
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false}));

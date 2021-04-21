@@ -11,7 +11,7 @@ body {
     grid-template-rows: 50px 1fr;
     grid-template-areas: 
         "nav"
-        "main"
+
 }
 
 body > nav {
@@ -77,3 +77,6 @@ table td {
     text-align: center;
 }
 
+#picture {
+    max-height: 50px;
+}
