@@ -15,7 +15,6 @@ function newCraft(req, res) {
 }
 
 function create(req, res){
-    console.log(req.body)
    WoodCraft.create(req.body, function( err, woodCraft){
        if(err) return res.redirect('/woodCrafts/new');
        res.redirect('woodCrafts/');
@@ -31,7 +30,6 @@ function index(req, res){
 
 function edit(req, res){
     WoodCraft.findById(req.params.id, function(err, woodCraft){
-        console.log(req.params.id, woodCraft, err)
         res.render('woodCrafts/edit', {title: 'Edit', woodCraft})
     });
     
@@ -46,20 +44,22 @@ function del(req, res) {
 }
 
 
+function create(req, res){
+    WoodCraft.create(req.body, function(err, woodCraft){
+        if(err) return res.redirect('/woodCrafts/new');
+        res.redirect('woodCrafts/');
+    }); 
+ }
+
+function update(req, res){
+    WoodCraft.findByIdAndUpdate(req.params.id, req.body, function(err, woodCraft){
+        res.redirect('/woodCrafts');
+        });
+    }
+
 
 function gallery(req, res){
     WoodCraft.find({}, function(err, woodCrafts){
         res.render('woodCrafts/gallery', {title: 'Gallery'})
     });
-}
-
-
-
-function update(req, res){
-    WoodCraft.findByIdAndUpdate(req.params.id, function(err, woodCraft){
-        woodCraft.push(req.body);
-        woodCraft.save(function () {
-            res.redirect('woodCrafts/');
-        });
-    })
 }
