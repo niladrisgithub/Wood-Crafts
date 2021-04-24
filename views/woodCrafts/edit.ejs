@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <title>EDIT</title>
+      </head>
+      <body>
+        <nav>
+          <img src="/images/saw-blade.jpeg">
+          <a href="/woodCrafts/new" >CREATE REQUEST</a>
+          <a href="/woodCrafts/gallery">GALLERY</a>
+          <a href="/woodCrafts" >HOME</a>
+        </nav>
+        
+        <h1>Edit Your Item</h1>
+       <form action="/woodCrafts/<%= woodCraft._id %>" method="POST">
+            <input type="text" name="itemDesired">
+            <select name="material">
+                <option value=" "disabled selected>Choose your option</option>
+                <option value="Alder">Alder</option>
+                <option value="Cedar">Cedar</option>
+                <option value="Cherry">Cherry</option>
+                <option value="Douglas-fir">Douglas-Fir</option>
+                <option value="Maple">Maple</option>
+                <option value="Oak">Oak</option>
+                <option value="Pine">Pine</option>
+                <option value="Poplar">Poplar</option>
+                <option value="Pressure-Treated Lumber">Pressure Treated Boards</option>
+                <option value="Red Oak">Red Oak</option>
+                <option value="Spruce">Spruce</option>
+                <option value="Walnut">Walnut</option>
+            </select>
+            <input type="text" name="size">
+            <input type="submit" value="Update Project">
+    </form>
+
+        
+    </body>
+    </html>

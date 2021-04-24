@@ -6,7 +6,7 @@ module.exports = {
     create,
     del,
     update,
-    show,
+    edit,
     gallery,
 };
 
@@ -28,30 +28,37 @@ function index(req, res){
     });
 }
 
-function update(req, res){
-    WoodCraft.findByIdAndUpdate()
-    req.save(function(err){
-        res.redirect('woodCrafts/')
+
+function edit(req, res){
+    WoodCraft.find({}, function(err, woodCrafts){
+        res.render('woodCrafts/edit', {title: 'Edit'})
     });
+    
 }
 
 
 function del(req, res){
-    req.woodCrafts.pull(req.params.id);
+    WoodCraft.findByIdandDelete(req.params.id);
     req.save(function(err){
         res.redirect('woodCrafts/')
     });
 }
 
-function show(req, res){
-    WoodCraft.findById(req.params.id, function(err, woodCrafts){
-        res.render('woodCrafts/show', {title: 'Show'})
-    });
-}
 
 
 function gallery(req, res){
     WoodCraft.find({}, function(err, woodCrafts){
         res.render('woodCrafts/gallery', {title: 'Gallery'})
     });
+}
+
+
+
+function update(req, res){
+    WoodCraft.findByIdAndUpdate(req.params.id, function(err, woodCraft){
+        woodCraft.push(req.body);
+        woodCraft.save(function () {
+            res.redirect('woodCrafts/');
+        });
+    })
 }

@@ -4,9 +4,10 @@ const woodCraftsCtrl = require('../controllers/WoodCrafts');
 
 router.get('/', woodCraftsCtrl.index);
 router.get('/new', woodCraftsCtrl.new);
-router.get('/:id', woodCraftsCtrl.show)
+// router.get('/:id', woodCraftsCtrl.edit)
 router.post('/', woodCraftsCtrl.create);
-router.delete('/woodCrafts/:id', woodCraftsCtrl.del)
-router.get('/gallery', woodCraftsCtrl.gallery)
+router.delete('/:id', woodCraftsCtrl.del)
 router.put('/', woodCraftsCtrl.update);
+router.get('/gallery', woodCraftsCtrl.gallery)
+
 module.exports = router;
