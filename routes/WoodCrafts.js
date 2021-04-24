@@ -7,7 +7,7 @@ router.get('/new', woodCraftsCtrl.new);
 router.get('/:id', woodCraftsCtrl.edit)
 router.post('/', woodCraftsCtrl.create);
 router.delete('/:id', woodCraftsCtrl.del)
-router.put('/', woodCraftsCtrl.update);
+router.post('/', woodCraftsCtrl.update);
 router.get('/gallery', woodCraftsCtrl.gallery)
 
 module.exports = router;

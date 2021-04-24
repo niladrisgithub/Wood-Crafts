@@ -16,7 +16,8 @@
         </nav>
         
         <h1>Edit Your Item</h1>
-        <form action="/woodCrafts/<%= woodCraft._id %>" method="GET">
+        <h2>Does this work</h2>
+        <form action="/woodCrafts/<%= woodCraft._id %>/?_methodDELETE" method="POST">
           <input type="text" name="itemDesired">
           <select name="material">
               <option value=" "disabled selected>Choose your option</option>

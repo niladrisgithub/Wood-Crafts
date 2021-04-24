@@ -30,8 +30,9 @@ function index(req, res){
 
 
 function edit(req, res){
-    WoodCraft.find({}, function(err, woodCrafts){
-        res.render('woodCrafts/edit', {title: 'Edit'})
+    WoodCraft.findById(req.params.id, function(err, woodCraft){
+        console.log(req.params.id, woodCraft, err)
+        res.render('woodCrafts/edit', {title: 'Edit', woodCraft})
     });
     
 }
@@ -39,7 +40,7 @@ function edit(req, res){
 
 function del(req, res) {
     WoodCraft.findByIdAndDelete(req.params.id, function(err, woodCrafts) {
-        console.log(req.params.id)
+        console.log(req.params.id, woodCrafts, err)
         res.redirect('/woodCrafts');
     })
 }
