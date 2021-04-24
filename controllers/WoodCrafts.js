@@ -37,11 +37,11 @@ function edit(req, res){
 }
 
 
-function del(req, res){
-    WoodCraft.findByIdandDelete(req.params.id);
-    req.save(function(err){
-        res.redirect('woodCrafts/')
-    });
+function del(req, res) {
+    WoodCraft.findByIdAndDelete(req.params.id, function(err, woodCrafts) {
+        console.log(req.params.id)
+        res.redirect('/woodCrafts');
+    })
 }
 
 
