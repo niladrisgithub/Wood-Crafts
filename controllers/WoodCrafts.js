@@ -60,6 +60,6 @@ function update(req, res){
 
 function gallery(req, res){
     WoodCraft.find({}, function(err, woodCrafts){
-        res.render('woodCrafts/gallery', {title: 'Gallery'})
+        res.render('woodCrafts/gallery', { title: 'Gallery', woodCrafts});
     });
 }
