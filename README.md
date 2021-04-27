@@ -15,6 +15,12 @@ Are you in the market for some lovely hand made wooden products? Look no further
 Here is the wireframe.
 ![wireframe](./public/images/Project-2-Wireframe.png) 
 
+Here are some screenshots of the web app.
+![gallery](./public/images/gallery.png)
+
+![index](./public/images/index.png)
+
+![request](./public/images/request.png)
 
 
 
