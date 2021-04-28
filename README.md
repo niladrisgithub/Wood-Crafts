@@ -25,6 +25,6 @@ Here are some screenshots of the web app.
 
 
 ## Getting Started
-[Click here](link) 
+[Click here](https://sinha-crafts.herokuapp.com/woodCrafts) 
 
 ## Future Enhancements
