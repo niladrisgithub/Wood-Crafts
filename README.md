@@ -16,9 +16,11 @@ Here is the wireframe.
 ![wireframe](./public/images/Project-2-Wireframe.png) 
 
 Here are some screenshots of the web app.
-![gallery](./public/images/gallery.png)
 
 ![index](./public/images/index.png)
+
+![gallery](./public/images/gallery.png)
+
 
 ![request](./public/images/request.png)
 
