@@ -1,10 +1,13 @@
 // Load your modules (use require() statements at the top of the file)
  const express = require('express');
  const morgan = require ('morgan');
- const port = 3000;
+ const port = process.env.PORT || 3000;
  const indexRouter = require('./routes/index');
  const woodCraftsRouter = require('./routes/WoodCrafts');
  const methodOverride = require('method-override')
+
+ // Require env vars 
+require('dotenv').config();
 
 // Create or initialize the express app
 const app = express();

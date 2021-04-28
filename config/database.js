@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
  
-const connectionString = 'mongodb+srv://admin:abc1234@cluster0.x31bw.mongodb.net/wood-crafts?retryWrites=true&w=majority';
+const connectionString = process.env.DATABASE_URI;
  
 mongoose.connect(connectionString, {
    useNewUrlParser: true, 
