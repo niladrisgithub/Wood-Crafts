@@ -81,6 +81,12 @@ nav > a.active {
     margin-left: auto;
 }
 
+#edit-form {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, minmax(auto, 22rem));
+}
+
 #edit-form * {
     font-size: 18px;
     padding: 5px;
@@ -92,6 +98,7 @@ nav > a.active {
     width: 10rem;
     margin-left: auto;
 }
+
 table {
     font-size: 23px;
 }
@@ -162,6 +169,105 @@ button:hover {
     background-color: rgb(223, 174, 15);
 }
 
-@media only screen and (min-width: 768px){
-   
+@media only screen and (max-width: 768px){
+   body{ 
+       background: rgb(255, 238, 183);
+   }
+
+   body > nav {
+        grid-area: nav;
+        background-color: rgb(223, 174, 15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px 0 30px;
+        margin: auto;
+    }
+
+    nav > img {
+        width: 43px;
+        object-fit: contain;
+        margin: auto;
+    }
+
+    nav > a {
+        margin: 20 px;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    nav > a.active {
+        color: whitesmoke;
+    }
+
+   #new-form {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(1, minmax(auto, 20rem));
+        margin: auto;
+        justify-content: center;
+    }
+
+    #new-form * {
+        padding: 5px;
+        border-radius: 7px;
+    }
+
+    #new-form input[type="submit"]{
+        grid-column: span 1;
+        width: 10rem;
+        margin-left: auto;
+    }
+
+    #edit-form {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, minmax(auto, 20rem));
+        margin: auto;
+        justify-content: center;
+    }
+
+    #edit-form * {
+        padding: 5px;
+        border-radius: 7px;
+        justify-content: center;
+    }
+        
+    #edit-form input[type="submit"]{
+        grid-column: span 1;
+        width: 10rem;
+        margin-left: auto;
+        }
+
+
+    body > footer {
+        background-color: rgb(223, 174, 15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px 0 30px;
+        margin: auto;
+    }
+    footer > a {
+        margin: 20 px;
+        text-decoration: none;
+        padding: 3px;
+        }
+
+    #gallery{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5px;
+        height: 50vh;
+        margin: 4px;
+        flex-wrap: wrap;
+        }
+        
+    .gallery{
+        width: 0vmin;
+        }
+        
+
+
 }
