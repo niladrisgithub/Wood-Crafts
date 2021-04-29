@@ -31,3 +31,4 @@ Are you in the market for some lovely hand made wooden products? Look no further
 [Click here](https://sinha-crafts.herokuapp.com/woodCrafts) 
 
 ## Future Enhancements
+- Improve mobile responsiveness

@@ -47,7 +47,7 @@
                     <td><%= woodCraft.itemDesired %></td>
                     <td><%= woodCraft.material %></td>
                     <td><%= woodCraft.size %></td>
-                    <td><%= woodCraft.createdAt.toLocaleString() %></td>
+                    <td><%= woodCraft.updatedAt.toLocaleDateString() %></td>
                     <td>
                         <form action="/woodCrafts/<%= woodCraft._id %>/"><button type="submit">EDIT</button></form>
                         <form action="/woodCrafts/<%= woodCraft._id %>/?_method=DELETE" method="POST">
