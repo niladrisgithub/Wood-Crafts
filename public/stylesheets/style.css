@@ -268,6 +268,20 @@ button:hover {
         width: 0vmin;
         }
         
+    #home{
+        display: flex;
+        justify-content: center;
+    }
 
-
+    #picture{
+        width: 88px;
+        display: flex;
+        justify-content: center;
+    }
+    #list{
+        display: grid;
+        margin: auto;
+        justify-content: center;
+        width: 0vmin;
+    }
 }

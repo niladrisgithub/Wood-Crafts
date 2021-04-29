@@ -12,12 +12,13 @@ Are you in the market for some lovely hand made wooden products? Look no further
 - MongoDB
 
 ## Screenshots
-Here is the wireframe.
+#### Here is the wireframe.
 ![wireframe](./public/images/Project-2-Wireframe.png) 
 
-Here are some screenshots of the web app.
+#### Here are some screenshots of the web app.
 
 ![index](./public/images/index.png)
+
 
 ![gallery](./public/images/gallery.png)
 
