@@ -10,6 +10,7 @@
       <body>
         <nav>
           <img src="/images/saw-blade.jpeg">
+          <a href="/woodCrafts/cart">CART</a>
           <a href="/woodCrafts/new" >CREATE REQUEST</a>
           <a href="/woodCrafts/gallery">GALLERY</a>
           <a href="/woodCrafts" >HOME</a>
@@ -36,8 +37,8 @@
             <tr>
                 <th>Wooden Craft</th>
                 <th>Material</th>
-                <th>Size / Dimensions</th>
-                <th>Date Requested</th>
+                <th>Size/ <br>Dimensions</th>
+                <th>Date Request/<br>Update</th>
             </tr>
         </thead>
         <tbody>
@@ -49,9 +50,11 @@
                     <td><%= woodCraft.size %></td>
                     <td><%= woodCraft.updatedAt.toLocaleDateString() %></td>
                     <td>
-                        <form action="/woodCrafts/<%= woodCraft._id %>/"><button type="submit">EDIT</button></form>
+                        <form action="/woodCrafts/cart/"><button type="submit" id="add-to-cart">BUY</button></form>
+                        <form action="/woodCrafts/<%= woodCraft._id %>/"><button type="submit" id="edit">EDIT</button></form>
                         <form action="/woodCrafts/<%= woodCraft._id %>/?_method=DELETE" method="POST">
-                        <button type="submit">DELETE</button>
+                        <button type="submit" id="delete">DELETE</button>
+                        
                     </form>
                     </td>
                 </tr>

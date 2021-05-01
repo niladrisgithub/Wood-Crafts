@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <title>WOODCRAFT CART</title>
+      </head>
+      <body>
+        <nav>
+          <img src="/images/saw-blade.jpeg">
+          <a href="/woodCrafts/cart">CART</a>
+          <a href="/woodCrafts/new" >CREATE REQUEST</a>
+          <a href="/woodCrafts/gallery">GALLERY</a>
+          <a href="/woodCrafts" >HOME</a>
+        </nav>
+
+
+        <main>
+<h1>Your Shopping Cart</h1>
+   <table id="list">
+        <thead id="list-head">
+            <tr>
+                <th>Wooden Craft</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% woodCrafts.forEach(function(woodCraft){ %>
+
+            <% }) %>
+            <tr>
+                <td><%= woodCrafts.itemDesired %></td>
+            </tr>
+
+         </tbody>
+        </table>
+
+
+
+        </main>
+
+        <footer>
+            <p>All Rights Reserved Copyright &copy; NSWC2021</p>
+            <a href="/woodCrafts" >HOME</a>
+            <a href="mailto: niladri.sinha89@gmail.com">CONTACT</a>
+          </footer>
+          </body>
+          </html>

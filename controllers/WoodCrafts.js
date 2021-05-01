@@ -4,10 +4,13 @@ module.exports = {
     new: newCraft,
     index,
     create,
+    gallery,
+    cart,
     del,
     update,
     edit,
-    gallery,
+    buy,
+   
 };
 
 function newCraft(req, res) {
@@ -62,4 +65,16 @@ function gallery(req, res){
     WoodCraft.find({}, function(err, woodCrafts){
         res.render('woodCrafts/gallery', { title: 'Gallery', woodCrafts});
     });
+}
+
+function cart(req, res){
+    WoodCraft.find({}, function(err, woodCrafts){
+        res.render('woodCrafts/cart', { title: 'Cart', woodCrafts});
+    })
+}
+
+function buy(req, res){
+    WoodCraft.findById(req.params.id, function(err, woodCrafts){
+        res.render('woodCrafts/cart', {title: 'Cart', woodCrafts})
+    })
 }
