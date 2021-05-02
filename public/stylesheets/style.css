@@ -175,6 +175,15 @@ button:hover {
     min-width: inherit;
 }
 
+.cart > #list {
+    display: flex;
+   justify-content: center;
+}
+
+.cart > form {
+    display: flex;
+    justify-content: center;
+}
 
 @media only screen and (max-width: 768px) {
     body {
