@@ -7,19 +7,18 @@
 body {
     margin: 0;
     height: 100vh;
-    
-    background: repeating-conic-gradient(
-        from 10deg at 25% 22%,
-        rgb(255, 238, 183) 5deg 15deg,
-        rgb(241, 207, 94) 10deg 30deg
-    );
+
+    background: repeating-conic-gradient(from 10deg at 25% 22%,
+            rgb(255, 238, 183) 5deg 15deg,
+            rgb(241, 207, 94) 10deg 30deg);
     display: grid;
     grid-template-rows: 50px 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "nav"
 }
 
-h1, h3 {
+h1,
+h3 {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -32,7 +31,7 @@ h1, h3 {
 }
 
 
-body > nav {
+body>nav {
     grid-area: nav;
     background-color: rgb(223, 174, 15);
     display: flex;
@@ -41,25 +40,25 @@ body > nav {
     padding: 0 20px 0 30px;
 }
 
-nav > img {
+nav>img {
     width: 43px;
     object-fit: contain;
     margin-right: auto;
 }
 
-nav > a {
+nav>a {
     margin: 20 px;
     text-decoration: none;
     padding: 10px;
     border-radius: 7px;
 }
 
-nav > a:hover {
+nav>a:hover {
     color: whitesmoke;
-    background-color:rgb(50, 59, 70);
+    background-color: rgb(50, 59, 70);
 }
 
-nav > a.active {
+nav>a.active {
     color: whitesmoke;
 }
 
@@ -75,7 +74,7 @@ nav > a.active {
     border-radius: 7px;
 }
 
-#new-form input[type="submit"]{
+#new-form input[type="submit"] {
     grid-column: span 2;
     width: 10rem;
     margin-left: auto;
@@ -93,7 +92,7 @@ nav > a.active {
     border-radius: 7px;
 }
 
-#edit-form input[type="submit"]{
+#edit-form input[type="submit"] {
     grid-column: span 2;
     width: 10rem;
     margin-left: auto;
@@ -119,7 +118,7 @@ table td {
     justify-content: center;
 }
 
-#gallery{
+#gallery {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -131,7 +130,7 @@ table td {
     flex-wrap: wrap;
 }
 
-.gallery{
+.gallery {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,46 +139,49 @@ table td {
     flex-wrap: wrap;
 }
 
-#list{
+#list {
     padding: 50px;
 }
 
-body > footer {
+body>footer {
     background-color: rgb(223, 174, 15);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 20px 0 30px;
 }
-footer > a {
+
+footer>a {
     margin: 20 px;
     text-decoration: none;
     padding: 10px;
-    border-radius: 7px;}
+    border-radius: 7px;
+}
 
-footer > a:hover {
+footer>a:hover {
     color: whitesmoke;
-    background-color:rgb(50, 59, 70);
+    background-color: rgb(50, 59, 70);
 }
 
 button {
     cursor: pointer;
 }
+
 button:hover {
     background-color: rgb(223, 174, 15);
 }
 
-#update{
-    min-width:inherit;
+#update {
+    min-width: inherit;
 }
 
 
-@media only screen and (max-width: 768px){
-   body{ 
-       background: rgb(255, 238, 183);
-   }
+@media only screen and (max-width: 768px) {
+    body {
+        background: rgb(255, 238, 183);
+    }
 
-   body > nav {
+    body>nav {
         grid-area: nav;
         background-color: rgb(223, 174, 15);
         display: flex;
@@ -189,23 +191,23 @@ button:hover {
         margin: auto;
     }
 
-    nav > img {
+    nav>img {
         width: 43px;
         object-fit: contain;
         margin: auto;
     }
 
-    nav > a {
+    nav>a {
         margin: 20 px;
         text-decoration: none;
         padding: 10px;
     }
 
-    nav > a.active {
+    nav>a.active {
         color: whitesmoke;
     }
 
-   #new-form {
+    #new-form {
         display: grid;
         grid-gap: 5px;
         grid-template-columns: repeat(1, minmax(auto, 20rem));
@@ -218,7 +220,7 @@ button:hover {
         border-radius: 7px;
     }
 
-    #new-form input[type="submit"]{
+    #new-form input[type="submit"] {
         grid-column: span 1;
         width: 10rem;
         margin-left: auto;
@@ -237,15 +239,15 @@ button:hover {
         border-radius: 7px;
         justify-content: center;
     }
-        
-    #edit-form input[type="submit"]{
+
+    #edit-form input[type="submit"] {
         grid-column: span 1;
         width: 10rem;
         margin-left: auto;
-        }
+    }
 
 
-    body > footer {
+    body>footer {
         background-color: rgb(223, 174, 15);
         display: flex;
         justify-content: center;
@@ -253,13 +255,14 @@ button:hover {
         padding: 0 20px 0 30px;
         margin: auto;
     }
-    footer > a {
+
+    footer>a {
         margin: 20 px;
         text-decoration: none;
         padding: 3px;
-        }
+    }
 
-    #gallery{
+    #gallery {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -267,23 +270,24 @@ button:hover {
         height: 50vh;
         margin: 4px;
         flex-wrap: wrap;
-        }
-        
-    .gallery{
+    }
+
+    .gallery {
         width: 0vmin;
-        }
-        
-    #home{
+    }
+
+    #home {
         display: flex;
         justify-content: center;
     }
 
-    #picture{
+    #picture {
         width: 88px;
         display: flex;
         justify-content: center;
     }
-    #list{
+
+    #list {
         display: grid;
         margin: auto;
         justify-content: center;
@@ -293,12 +297,12 @@ button:hover {
     table {
         font-size: 16px;
     }
-    
+
     table thead th {
         padding: 3px;
         border-bottom: 1px solid rgb(50, 59, 70);
     }
-    
+
     table td {
         padding: 24px;
         text-align: center;

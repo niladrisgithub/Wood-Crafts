@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel='stylesheet' href='/stylesheets/style.css' />
-        <title>WOODCRAFT REQUEST</title>
-      </head>
-      <body>
-        <nav>
-            <img src="/images/saw-blade.jpeg">
-            <a href="/woodCrafts/cart">CART</a>
-            <a href="/woodCrafts/new" >CREATE REQUEST</a>
-            <a href="/woodCrafts/gallery">GALLERY</a>
-            <a href="/woodCrafts" >HOME</a>
-          </nav>
-        <main>
-          <h1>Request a Custom Wooden Craft</h1>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <title>WOODCRAFT REQUEST</title>
+</head>
+
+<body>
+  <nav>
+    <img src="/images/saw-blade.jpeg">
+    <a href="/woodCrafts/cart">CART</a>
+    <a href="/woodCrafts/new">CREATE REQUEST</a>
+    <a href="/woodCrafts/gallery">GALLERY</a>
+    <a href="/woodCrafts">HOME</a>
+  </nav>
+  <main>
+    <h1>Request a Custom Wooden Craft</h1>
 
     <form id="new-form" action="/woodCrafts" method="POST" autocomplete="off">
-    <label>Wooden Craft</label>
-    <input type="text" name="itemDesired">
-    <label>Material</label>
+      <label>Wooden Craft</label>
+      <input type="text" name="itemDesired">
+      <label>Material</label>
       <div class="input-field col s12">
-      <select name="material">
-        <option value=" "disabled selected>Choose your material</option>
-        <option value="Alder">Alder</option>
-        <option value="Cedar">Cedar</option>
-        <option value="Cherry">Cherry</option>
-        <option value="Douglas-Fir">Douglas-Fir</option>
-        <option value="Maple">Maple</option>
-        <option value="Oak">Oak</option>
-        <option value="Pine">Pine</option>
-        <option value="Poplar">Poplar</option>
-        <option value="Pressure Treated Lumber">Pressure Treated Boards</option>
-        <option value="Red Oak">Red Oak</option>
-        <option value="Spruce">Spruce</option>
-        <option value="Walnut">Walnut</option>
-    </select>
-  </div>
-    <label>Size or Dimensions</label>
-    <input type="text" name="size">
-    <input type="submit" value="Request Project">
-</form>
-        </main>
-<footer>
-  <p>All Rights Reserved Copyright &copy; NSWC2021</p>
-  <a href="/woodCrafts" >HOME</a>
-  <a href="mailto: niladri.sinha89@gmail.com">CONTACT</a>
-</footer>
+        <select name="material">
+          <option value=" " disabled selected>Choose your material</option>
+          <option value="Alder">Alder</option>
+          <option value="Cedar">Cedar</option>
+          <option value="Cherry">Cherry</option>
+          <option value="Douglas-Fir">Douglas-Fir</option>
+          <option value="Maple">Maple</option>
+          <option value="Oak">Oak</option>
+          <option value="Pine">Pine</option>
+          <option value="Poplar">Poplar</option>
+          <option value="Pressure Treated Lumber">Pressure Treated Boards</option>
+          <option value="Red Oak">Red Oak</option>
+          <option value="Spruce">Spruce</option>
+          <option value="Walnut">Walnut</option>
+        </select>
+      </div>
+      <label>Size or Dimensions</label>
+      <input type="text" name="size">
+      <input type="submit" value="Request Project">
+    </form>
+  </main>
+  <footer>
+    <p>All Rights Reserved Copyright &copy; NSWC2021</p>
+    <a href="/woodCrafts">HOME</a>
+    <a href="mailto: niladri.sinha89@gmail.com">CONTACT</a>
+  </footer>
 </body>
+
 </html>

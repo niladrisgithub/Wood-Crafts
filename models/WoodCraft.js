@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
- 
-   
-const woodCraftSchema = new Schema({   
+
+
+const woodCraftSchema = new Schema({
     user: {
-        
+
     },
     itemDesired: {
         type: String,
@@ -19,8 +19,9 @@ const woodCraftSchema = new Schema({
         type: String,
         required: true,
     },
-}, {timestamps: true
-    
+}, {
+    timestamps: true
+
 });
 
 module.exports = mongoose.model('WoodCraft', woodCraftSchema)
