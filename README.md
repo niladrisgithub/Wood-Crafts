@@ -1,15 +1,21 @@
 # Wood Crafts
 
-Are you in the market for some lovely hand made wooden products? Look no further! Here is a site to 
+Are you in the market for some lovely hand made wooden products? Look no further! Here is a site to get custom made wood crafts!
 
 ## Technologies
-- HTML5
-- CSS3
-- JavaScript
-- Express
 - Node
 - Mongoose
 - MongoDB
+- Express
+- HTML5
+- CSS3
+- JavaScript
+- Heroku
+
+## Getting Started
+[Click here](https://sinha-crafts.herokuapp.com/woodCrafts) 
+
+
 
 ## Screenshots
 #### Here is the wireframe.
@@ -27,8 +33,8 @@ Are you in the market for some lovely hand made wooden products? Look no further
 
 
 
-## Getting Started
-[Click here](https://sinha-crafts.herokuapp.com/woodCrafts) 
-
 ## Future Enhancements
 - Improve mobile responsiveness
+- Add Oauth, allowing users to delete and update only their requests
+- Finish figuring out the shopping cart feature
+- Leave reviews on items in the gallery
