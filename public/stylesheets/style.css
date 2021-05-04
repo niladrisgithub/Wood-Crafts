@@ -143,6 +143,8 @@ table td {
     padding: 50px;
 }
 
+
+
 body>footer {
     background-color: rgb(223, 174, 15);
     display: flex;
@@ -182,6 +184,11 @@ button:hover {
 
 .cart > form {
     display: flex;
+    justify-content: center;
+}
+
+#new-form {
+    display: grid;
     justify-content: center;
 }
 
